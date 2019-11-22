@@ -1,0 +1,129 @@
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: #fff;
+  color: #444;
+}
+
+h1,
+p {
+  margin: 0 0 1em 0;
+}
+
+.container {
+  max-width: 940px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+
+
+/* no grid support? */
+/*
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+*/
+.container {
+ display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, 20vmin);
+  grid-template-rows: repeat(3, 20vmin);
+}
+
+.header {
+position: sticky;
+top: 0;
+}
+#navbar {
+grid-column: 1 / -1;
+text-align: center;
+}
+
+ #navbar li {
+ list-style: none;
+ display: inline;
+ padding: 2.5%;
+}
+#navbar a {
+ text-decoration: none;
+ padding: 1% 2.5%;
+ color: slategrey;
+}
+
+.welcome-section {
+ grid-column: 1 / -1;
+ height: 100vh;
+ background-image: url("../images/portfolio-background-1857x1039.png");
+ background-size:cover;
+ color:#005a95;
+}
+
+.welcome-text {
+text-align: center;
+}
+
+.welcome-text h1 {
+  font-family: 'Molle', cursive;
+  font-size: 2em;
+}
+
+#projects {
+display: grid;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 40vmin);
+  grid-template-rows: repeat(3, 40vmin);
+}
+.project-tile {
+  /* needed for the flex layout*/
+  grid-template-columns: repeat(4, 30vw);
+  grid-template-rows: repeat(3, 30vh);
+  background: pink;
+}
+
+.header,
+.footer {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+}
+
+.footer li {
+  list-style: none;
+  dislpay: inline;
+  padding: 20px;
+}
+
+.container > * {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
+@supports (display: grid) {
+  .container > * {
+    margin: 0;
+  }
+}

@@ -1,0 +1,412 @@
+/* GLOBAL STYLES */
+ * {
+  box-sizing: border-box;
+ }
+
+body {
+ width: 100vw;
+ font-size: 1em;
+ line-height: 1.5;
+ color: rgb(54, 59, 65);
+ margin: 0;
+ font-family: 'Raleway', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+#site-header {
+  width: 100vw;
+  }
+.navbar {
+  text-align: center;
+  }
+.navbar, .nav-items {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+}
+i.fa.fa-bars {
+  font-size: 1.5em;
+}
+/*
+#social-contact, #social-contact ul, #social-contact a {
+  color: #c4e2ef;
+}
+#social-contact, #social-contact h4, #social-contact p {
+flex-basis: 100vw;
+ width: 100%;
+ justify-content: center;
+ align-self: center;
+ text-align: center;
+ margin: auto;
+ padding-inline-start: 0;
+}
+
+#social-contact h4, #social-contact p {
+ font-size: 70%;
+ padding: 1em;
+}
+#social-contact li {
+ list-style: none;
+ display: inline;
+ padding: 2.5%;
+}
+#social-contact a {
+ text-decoration: none;
+ padding: 1% 2.5%;
+}
+*/
+.nav-link {
+  padding-right: 8px;
+}
+.nav-items {
+  display: none;
+}
+.nav-items a {
+  color: rgb(54, 59, 65);
+}
+/* Change color on hover */
+.nav-items a:hover {
+  color: #00609a;
+}
+.nav-ToggleShow {
+  display: flex;
+}
+.nav-toggle {
+  align-self: flex-end;
+  display: initial;
+  position: absolute;
+  cursor: pointer;
+}
+/*User Story #10: The height of the welcome section should be equal to the height of the viewport.*/
+
+#welcome-section {
+  height: 100vh;
+/* add the to background image selector for linear gradient layer over background image
+linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), */
+  background-image: url("../images/portfolio-background-1857x1039.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/* use to fix backgound image allowing text to scroll over the image */
+/* background-attachment: fixed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  line-height: 1;
+  background-attachment: fixed;
+}
+
+.welcome-text {
+  margin-top: 0;
+  margin-bottom: 50vh;
+  color: #000000;
+}
+
+.gradient {
+ font-family: 'Molle', cursive;
+    background: linear-gradient(to right,#00609a,#b7deef 90%);
+    -webkit-background-clip: text0 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    margin: 0 0 10px;
+    color: #0E8ABE;
+    font-size: 2em;
+    line-height: 1;
+    text-align: center;
+}
+
+.welcome-text h2 {
+margin: auto;
+}
+ /* make a seperate grid for projects? */
+#projects, .grid {
+    width: 90%;
+    margin: auto;
+}
+  /*
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+   grid-gap: 0.5em;
+*/
+/*
+
+ .project-tile {
+   text-align: center;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+ }
+.project-tile {
+  text-align: center;
+}
+*/
+.gallery {
+padding-bottom: 60px;
+}
+
+.project-tile {
+ margin: 20px;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid darkgray;
+    padding: 1em;
+}
+
+#about {
+  width: 100vw;
+  text-align: center;
+  background-image: url("../images/portfolio-background-1857x1039.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.profile-card {
+  padding: 20px 0px;
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+}
+
+.profile-image {
+  text-align: center;
+  margin: 0.5em;
+  padding: 20px 0px;
+}
+.profile-image img {
+  border-radius: 50%;
+  max-width: 100px;
+}
+.profile-content {
+  padding: 0.5em;
+  justify-content: left;
+}
+#profile h3 {
+  margin: 0;
+}
+ #profile h4 {
+  margin-top: 0;
+}
+#profile i {
+ margin: 0;
+ font-size: 80%;
+}
+
+#profile .fa, #profile a {
+  color: #c4e2ee;
+}
+
+#profile a {
+  margin-left: 15px;
+}
+/*
+#about {
+  display: flex;
+  margin: 50px 0;
+  flex-direction: column;
+}
+
+.about-header {
+  width: 100%;
+  text-align: center;
+  background-color: #badfef;
+  padding-top:20px;
+}
+
+#article-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #8ac3e7
+}
+#article-content p {
+  width: 90%;
+  margin: auto;
+}
+#about-image img {
+  border-radius: 50%;
+  width: 50%;
+  max-width: 200px;
+  margin: auto;
+}
+#about-text h3 {
+
+}
+*/
+.footer {
+ display: flex;
+ flex-wrap: wrap;
+ background-color:#005a95;
+ color: #97c8ea;
+ justify-content: center;
+}
+
+.footer, .footer ul, .footer a {
+  color: #c4e2ef;
+}
+.footer ul, .footer h4, .footer p {
+flex-basis: 100vw;
+ width: 100%;
+ justify-content: center;
+ align-self: center;
+ text-align: center;
+ margin: auto;
+ padding-inline-start: 0;
+}
+
+.footer h4, .footer p {
+ font-size: 70%;
+ padding: 1em;
+}
+footer li {
+ list-style: none;
+ display: inline;
+ padding: 2.5%;
+}
+footer a {
+ text-decoration: none;
+ padding: 1% 2.5%;
+}
+@media only screen and (min-width: 600px) {
+  .profile-card {
+    margin-bottom: 30px;
+  }
+  .profile {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .profile-content {
+    width: 80%;
+    margin: auto;
+  }
+  .profile-image img {
+    max-width: 150px;
+  }
+  #profile i {
+    font-size: normal;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+ .header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+ }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+    border-bottom: 2px solid #666666;
+  }
+#topnav {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .nav-link a {
+    margin: 10px;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+ #logo, #navbar {
+
+  width: 100%;
+ }
+
+#welcome-section {
+ margin-top: 20px;
+}
+
+.welcome-text {
+
+}
+.gallery {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows:
+ minmax(min-content, max-content)
+ auto
+ minmax(min-content, max-content);
+ }
+#about {
+ width: 100vw;
+ background-image: none;
+ background-color: #ffffff;
+}
+#profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+#profile-header {
+  width: 100%;
+}
+#about-title {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+#about-title h1 {
+  margin: 0 auto;
+}
+#profile {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+#profile-header {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 20px;
+}
+.profile image {
+  width: 30vw;
+}
+
+.profile-image img {
+  max-width: 150px;
+}
+.profile-content {
+  width: 70vw;
+  text-align: left;
+}
+
+#profile .fa, #profile a {
+  color: #005a95;
+}
+
+.footer {
+  background-color: #005994;
+}
+#article-content {
+  width: 60vw;
+  padding: 20px;
+}
+#about-image img {
+  border-radius: 50%;
+  max-width: 50%;
+  margin: auto;
+}
+}
+@media only screen and (min-width: 900px) {
+ .gallery {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows:
+ minmax(min-content, max-content)
+ auto
+ minmax(min-content, max-content);
+ }
+}
